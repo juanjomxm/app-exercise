@@ -6,7 +6,7 @@ function CreateExercise(){
         setOpenModal
     } =React.useContext(ContextGlobal)
     return(
-        <div>
+        <div className='container-create-exercise'>
             <h1>Agregar ejercicio</h1>
             <button 
             onClick={()=>{

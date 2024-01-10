@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocalStorage } from "./useLocalSotorage.js";
+import { useLocalStorage } from "./useLocalStorage";
 
 const ContextGlobal = React.createContext()
 

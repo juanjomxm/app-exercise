@@ -23,26 +23,28 @@ function ExerciseForm(){
     }
 
     return(
-        <form 
-        style={styleFormExercise}
+        <form
+        className="form-add-exercise" 
         onSubmit={OnSubmit}
         >
-            <label style={styleLabelExercise}>Agregar ejercicio</label>
-            <textarea
-            style={styleTextExercise} 
-            placeholder="Inicia tu rutina"
-            value={newExerciseValue}
-            onChange={OnChange}
-            />
-            <div>
-                <button 
-                style={styleButtonCancelExercise}
+            <div className="text-add-exercise">
+                <textarea
+                className="text-area-exercise"
+                placeholder="Inicia tu rutina"
+                value={newExerciseValue}
+                onChange={OnChange}
+                />
+            </div>
+
+            <div className="container buttons">
+                <button
+                className="button-cancel"
                 type="button"
                 onClick={OnCancel}
                 >Cancelar</button>
 
                 <button
-                 style={styleButtonAddExercise}
+                className="button-add"
                  type="submit"
                  >Agregar</button> 
             </div>
