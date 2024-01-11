@@ -15,6 +15,10 @@ h1,h2,h3{
     color: white;
 }
 
+button{
+    cursor: pointer;
+}
+
 #root{
     display: flex;
     justify-content: center;
@@ -69,6 +73,7 @@ h1,h2,h3{
     justify-content: space-between;
     margin-top: 10px;
     color: white;
+    border-radius: 5px;
 }
 .button-delete-exercise{
     border-radius: 100%;

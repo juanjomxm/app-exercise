@@ -37,7 +37,6 @@ function App() {
             </React.Fragment>
             }
             
-            
             <ContainerListExercises>
                 {loading && <div className="loader-container"><div className="spinner"></div></div>}
                 {error && <p>Error</p>}
