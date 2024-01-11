@@ -1,14 +1,18 @@
 body {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     background-image: url(https://i.ytimg.com/vi/8ar4-RvF2eU/maxresdefault.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1,h2,h3{
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 #root{
@@ -18,12 +22,62 @@ h1,h2,h3{
     flex-direction: column;
 }
 
-.container-create-exercise{
+.container-add-exercise{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    width: 250px;
+    background-color: rgba(32,35,41,.8);
+    border-radius: 5px;
+}
+.button-add-exercise{
+    background-color: black;
+    color: green;
+    border-color: green;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.text-init-exercise{
+    width: 100px;
+    background: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    color: green;
 }
 
+.input-search-exercise{
+    margin-top: 20px;
+    background: black;
+    color: green;
+    border-radius: 5px;
+    border-color: green;
+    text-align: center;
+}
+
+.title-count-exercises{
+    width: 348px;
+    background: rgba(32,35,41,.8);
+    border-radius: 5px
+}
+
+.container-list-exercise{
+    width: 200px;
+    background: rgba(32,35,41,.8);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: white;
+}
+.button-delete-exercise{
+    border-radius: 100%;
+    background-color: black;
+    color: red;
+    border-color: red;
+}
+
+/* Estilos del modal y el formulario para llenar el modal */
 .modal{
     background-color: rgba(32,35,41,.8);
     display: flex;
@@ -42,20 +96,22 @@ h1,h2,h3{
     flex-direction: column;
     background: grey;
     border-radius: 10px;
-    width: 30%;
+    width: 20%;
     height: 30%;
     justify-content: center;
     align-items: center;
 }
 
 .text-add-exercise{
-    text-align: center;
     width: 90%;
     height: 40%;
+    display: flex;
+    justify-content: center
 }
 .text-area-exercise{
     max-width: 90%;
     max-height: 90%;
+    text-align: center;
 }
 .button-cancel, .button-add{
     cursor: pointer;
@@ -65,4 +121,19 @@ h1,h2,h3{
     border-radius: 5px;
     margin-left: 5px;
 }
+
+.spinner {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #4CAF50; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 

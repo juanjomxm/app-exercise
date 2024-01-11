@@ -10,6 +10,7 @@ function SearchExercise(){
     return(
       <div>
         <input 
+        className="input-search-exercise"
         placeholder="Buscar ejercicio"
         value={searchExercise}
         onChange={(eventSearch)=>{
@@ -22,7 +23,7 @@ function SearchExercise(){
   
   function ListExercises(props){ // Creando un complemento que por dentro lleva los elementos que se mostraran en el navegador y se podran reutilizar si es necesario
       return(
-        <div>
+        <div className="container-list-exercise">
           <input
           id="input-exercise" 
           type="checkbox" 
@@ -35,8 +36,9 @@ function SearchExercise(){
           >{props.text}</label>
   
           <button
+          className="button-delete-exercise"
           onClick={props.onDeleted}
-          >Eliminar</button>
+          >X</button>
         </div>
       )
   }
