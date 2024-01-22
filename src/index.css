@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(https://i.ytimg.com/vi/8ar4-RvF2eU/maxresdefault.jpg);
+    background-image: url('https://i.ytimg.com/vi/8ar4-RvF2eU/maxresdefault.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

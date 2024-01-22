@@ -12,8 +12,10 @@ function ExerciseProvider({children}){
     loading,
     error
   } = useLocalStorage('work-out', []) // Le estoy diciendo que el estado inicial es el array con objetos
-  const [searchExercise, setSearchExercise] = React.useState('')
+
   const [openModal, setOpenModal] = React.useState(false) // Para abrir el portal de manera manual seria cambiando el estado de un false a un true
+
+  const initExercise = exercises.filter(item => item)
   
 
   // ESTADOS DERIVADOS
@@ -21,9 +23,6 @@ function ExerciseProvider({children}){
   const completedExercise = exercises.filter(item => item.completed).length // Esto es un estado derivado, son variables, calculos etc, que hacemos a traves de un estado, tambien con el metodo filter le estoy diciendo que me devuelva los elementos que cumplan con la condicion
   const totalExercise = exercises.length
 
-  const searchedExercise = exercises.filter((item)=>{
-      return item.text.toLowerCase().includes(searchExercise.toLocaleLowerCase()) // Con estas dos metodos nuevos en el resultado no importa si lo busco en minuscula o mayuscula. Primero debo convertir todo en minuscula en con el metodo .toLowerCase() y despues lo que este entre parentesis del metodo includes le agrego el metodo .toLocaleLowerCase()
-    })
 
   // Funciones para la interaccion con la pagina
   const exerciseCompleted = (text)=>{
@@ -56,13 +55,12 @@ function ExerciseProvider({children}){
 
     return(
         <ContextGlobal.Provider value={{
+            exercises,
             loading,
             error,
+            initExercise,
             completedExercise,
             totalExercise,
-            searchExercise,
-            setSearchExercise,
-            searchedExercise,
             exerciseCompleted,
             deletedExercise,
             openModal,
