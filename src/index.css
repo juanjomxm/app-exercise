@@ -135,6 +135,7 @@ button{
     height: 120px;
     animation: spin 2s linear infinite;
     animation-direction: alternate;
+    margin-top: 50px;
   }
   
   @keyframes spin {

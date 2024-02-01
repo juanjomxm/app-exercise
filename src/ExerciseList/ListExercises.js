@@ -1,5 +1,4 @@
 import React from "react";
-import { ContextGlobal } from "../ContextGlobal/ContextGlobal";
 
 function ListExercises(props){ // Creando un complemento que por dentro lleva los elementos que se mostraran en el navegador y se podran reutilizar si es necesario
 

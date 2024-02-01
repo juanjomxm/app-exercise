@@ -16,7 +16,6 @@ function App() {
     error,
     initExercise,
     exerciseCompleted,
-    totalExercise,
     deletedExercise,
     openModal
 } = React.useContext(ContextGlobal)
@@ -37,10 +36,10 @@ function App() {
             }
             
             <ContainerListExercises>
-                {loading && <div className="loader-container"><div className="spinner"></div></div>}
                 {error && <p>Error</p>}
                 {!loading && initExercise.length === 0 && <p className="text-init-exercise">Inicia tu rutina</p>}
 
+                {loading && <div className="loader-container"><div className="spinner"></div></div>}
                 {initExercise.map(item => ( // Esta es la manera de trabajar con arrays, sus objetos y su manipulacion en react, despues de el componente, debemos indicar una key que concuerde con el objeto que se desea obtener. Al escribir el metodo para obetener el return no es en llaves si no en parentesis. Estoy ejecutando un estado derivado para poder filtrar el resultado que deseo
                 <ListExercises
                     key={item.text} 

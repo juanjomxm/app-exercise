@@ -23,8 +23,17 @@ function ExerciseProvider({children}){
   const completedExercise = exercises.filter(item => item.completed).length // Esto es un estado derivado, son variables, calculos etc, que hacemos a traves de un estado, tambien con el metodo filter le estoy diciendo que me devuelva los elementos que cumplan con la condicion
   const totalExercise = exercises.length
 
+  // Funcion para agregar el ejercicio
+  const addExercise = (text)=>{
+    const newExercise =[...exercises]
+    newExercise.push({
+      text,
+      completed: false
+    })
+    saveExercises(newExercise)
+  }
 
-  // Funciones para la interaccion con la pagina
+  // Al dar clik en esta funcion el ejercicio aparecera como completado
   const exerciseCompleted = (text)=>{
     const newExercise =[...exercises]
      const exerciseIndex = newExercise.findIndex(
@@ -34,6 +43,7 @@ function ExerciseProvider({children}){
     saveExercises(newExercise)
   }
 
+  // Funcion para eliminar el ejercicio
   const deletedExercise = (text)=>{
     const newExercise = [...exercises]
     const exerciseIndex = newExercise.findIndex(
@@ -41,15 +51,6 @@ function ExerciseProvider({children}){
      )
     newExercise[exerciseIndex].completed = true
     newExercise.splice(exerciseIndex, 1)
-    saveExercises(newExercise)
-  }
-
-  const addExercise = (text)=>{
-    const newExercise =[...exercises]
-    newExercise.push({
-      text,
-      completed: false
-    })
     saveExercises(newExercise)
   }
 
