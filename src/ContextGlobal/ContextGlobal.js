@@ -16,7 +16,6 @@ function ExerciseProvider({children}){
   const [openModal, setOpenModal] = React.useState(false) // Para abrir el portal de manera manual seria cambiando el estado de un false a un true
 
   const initExercise = exercises.filter(item => item)
-  
 
   // ESTADOS DERIVADOS
 
@@ -73,4 +72,5 @@ function ExerciseProvider({children}){
     )
 }
 
-export { ContextGlobal, ExerciseProvider }
+export { ContextGlobal }
+export { ExerciseProvider }
