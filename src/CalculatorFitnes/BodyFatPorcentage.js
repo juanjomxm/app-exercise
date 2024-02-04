@@ -44,7 +44,8 @@ function BodyFatPorcentage(){
           "Overfat": "Sobrepeso",
           "Obese": "Obeso",
           "Fitness": "Atleta",
-          "Average": "Promedio"
+          "Average": "Promedio",
+          "Athletes": "Atleta"
         };
     
         return translations[category] || category;
