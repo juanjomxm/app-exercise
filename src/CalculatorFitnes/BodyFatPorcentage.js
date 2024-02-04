@@ -71,6 +71,7 @@ function BodyFatPorcentage(){
 
             <input
             placeholder="edad"
+            type="number"
             value={inputAge}
             onChange={(event)=>{
                 setInputAge(event.target.value)
@@ -79,6 +80,7 @@ function BodyFatPorcentage(){
 
             <input
             placeholder="hombre o mujer"
+            type="text"
             value={inputGender}
             onChange={(event)=>{
                 setInputGender(event.target.value)
@@ -87,6 +89,7 @@ function BodyFatPorcentage(){
 
             <input
             placeholder="peso"
+            type="number"
             value={inputWeigtht}
             onChange={(event)=>{
                 setInputWeigtht(event.target.value)
@@ -95,6 +98,7 @@ function BodyFatPorcentage(){
 
             <input
             placeholder="estatura"
+            type="number"
             value={inputHeight}
             onChange={(event)=>{
                 setInputHeight(event.target.value)
@@ -103,6 +107,7 @@ function BodyFatPorcentage(){
 
             <input
             placeholder="medida cuello"
+            type="number"
             value={inputNeck}
             onChange={(event)=>{
                 setInputNeck(event.target.value)
@@ -111,6 +116,7 @@ function BodyFatPorcentage(){
 
             <input
             placeholder="medida cintura"
+            type="number"
             value={inputWaist}
             onChange={(event)=>{
                 setInputWaist(event.target.value)
@@ -119,6 +125,7 @@ function BodyFatPorcentage(){
 
             <input
             placeholder="medida cadera"
+            type="number"
             value={inputHip}
             onChange={(event)=>{
                 setInputHip(event.target.value)

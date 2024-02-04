@@ -52,6 +52,7 @@ function BodyMass(){
             <h2>Indice de masa corporal(IMC)</h2>
             <input
             placeholder="edad"
+            type="number"
             value={inputAge}
             onChange={(event)=>{
                 setInputAge(event.target.value)
@@ -60,6 +61,7 @@ function BodyMass(){
 
             <input
             placeholder="peso"
+            type="number"
             value={inputWeigtht}
             onChange={(event)=>{
                 setInputWeigtht(event.target.value)
@@ -68,6 +70,7 @@ function BodyMass(){
 
             <input
             placeholder="estatura"
+            type="number"
             value={inputHeight}
             onChange={(event)=>{
                 setInputHeight(event.target.value)

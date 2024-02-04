@@ -16,6 +16,10 @@ h1,h2,h3{
 }
 button{
     cursor: pointer;
+    background: #1B4242;
+    color: #93B1A6;
+    border-radius: 5px;
+    border-color: #93B1A6;
 }
 input{
     text-align: center;
