@@ -34,7 +34,8 @@ li{
 .container-calculator-fitness-and-list-exercise{
     width: 70vw;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    align-items: center;
 }
 
 .container-list-calculator{
